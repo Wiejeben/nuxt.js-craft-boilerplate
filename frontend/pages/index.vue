@@ -3,8 +3,6 @@
         <v-logo/>
 
         <h1>Welcome!</h1>
-
-        <nuxt-link to="/news">Go to the news page</nuxt-link>
     </section>
 </template>
 

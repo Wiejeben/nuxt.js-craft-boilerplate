@@ -85,9 +85,6 @@ module.exports = {
      * Apollo module configuration
      */
     apollo: {
-        errorHandler(error) {
-            consola.error(error);
-        },
         clientConfigs: {
             default: '~/plugins/apollo-config.js',
         }

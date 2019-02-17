@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: f8e98e90-abe9-420c-91ef-e24d645ef464
-dateModified: 1550433714
+dateModified: 1550440552
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -18,9 +18,47 @@ email:
   transportSettings: null
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  37dec144-66f8-4a73-95c4-c9ef177c9364:
+    name: Globals
   637310c2-57c6-494d-aab6-8bee7b82c1df:
     name: Common
+  fd61749a-9c2a-452c-828c-27030549f21d:
+    name: Misc
 fields:
+  14caf314-7482-49ee-a507-ed522a769a10:
+    contentColumnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    handle: place
+    instructions: ''
+    name: Place
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  19334b67-3de4-4763-9eff-3f56e0fd2a3f:
+    contentColumnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    handle: phone
+    instructions: ''
+    name: Phone
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   49df95d1-9335-456f-9975-732e1f464aec:
     contentColumnType: string
     fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
@@ -60,6 +98,35 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: nystudio107\seomatic\fields\SeoSettings
+  728e68fc-7333-4d76-9aa9-f8b1ec45263b:
+    contentColumnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    handle: address
+    instructions: ''
+    name: Address
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8a58b2d5-25c9-4778-8539-75d647defee3:
+    contentColumnType: string
+    fieldGroup: fd61749a-9c2a-452c-828c-27030549f21d
+    handle: href
+    instructions: ''
+    name: URL
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   aeaba914-7f69-4d49-85aa-0a9be07aa22d:
     contentColumnType: text
     fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
@@ -78,6 +145,46 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  c19db8b1-6e8c-4d55-b29d-fa429a504ca4:
+    contentColumnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    handle: postalCode
+    instructions: ''
+    name: 'Postal Code'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  3f9750a9-ae1b-42da-a85b-28b0a2480b68:
+    fieldLayouts:
+      1172f276-a7dc-41cf-9641-6bbdc7f61474:
+        tabs:
+          -
+            fields:
+              14caf314-7482-49ee-a507-ed522a769a10:
+                required: false
+                sortOrder: 2
+              19334b67-3de4-4763-9eff-3f56e0fd2a3f:
+                required: false
+                sortOrder: 4
+              728e68fc-7333-4d76-9aa9-f8b1ec45263b:
+                required: false
+                sortOrder: 1
+              c19db8b1-6e8c-4d55-b29d-fa429a504ca4:
+                required: false
+                sortOrder: 3
+            name: Location
+            sortOrder: 1
+    handle: location
+    name: Location
 plugins:
   craftql:
     edition: standard
@@ -145,6 +252,39 @@ sections:
         template: ''
         uriFormat: 'news/{slug}'
     type: channel
+  6daed0b6-7adb-4445-a58e-c09b7406418e:
+    enableVersioning: true
+    entryTypes:
+      ec81f43c-bc31-4410-bf00-9cc36e97cdc2:
+        fieldLayouts:
+          7d166b50-4f8b-47ac-8529-5271d44c1f47:
+            tabs:
+              -
+                fields:
+                  8a58b2d5-25c9-4778-8539-75d647defee3:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 1
+        handle: navigation
+        hasTitleField: true
+        name: Navigation
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: navigation
+    name: Navigation
+    propagateEntries: true
+    siteSettings:
+      95e89cc5-91be-44e4-833a-5d3017e3601f:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: null
+    structure:
+      maxLevels: '1'
+      uid: 0c8044e2-aeb7-41a2-8b8c-fc4a389fc86f
+    type: structure
   899ea362-fe9d-45d1-94c6-288e29f7a695:
     enableVersioning: true
     entryTypes:
