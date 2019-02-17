@@ -10,7 +10,9 @@
         "start": "nuxt start",
         "generate": "nuxt generate",
         "test": "jest",
-        "tailwind": "tailwind build assets/css/tailwind.css -o assets/css/generated-tailwind.css"
+        "tailwind-schema": "tailwind build assets/css/tailwind.css -o assets/css/tailwind-schema.css",
+        "graphql-schema": "./../backend/craft craftql/tools/print-schema > schema.graphqls",
+        "schemas": "npm run tailwind-schema && npm run graphql-schema"
     },
     "dependencies": {
         "@nuxtjs/apollo": "^4.0.0-rc4",

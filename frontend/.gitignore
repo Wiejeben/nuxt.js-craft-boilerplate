@@ -83,5 +83,11 @@ dist
 # Service worker
 sw.*
 
-# Ignore the generated Tailwind file
-assets/css/generated-tailwind.css
+# Generated Tailwind file
+assets/css/tailwind-schema.css
+
+# Generated GraphQL schema
+schema.graphqls
+
+# GraphQL IDE config
+graphql.config.json

@@ -9,6 +9,10 @@ Can be found in the `frontend` directory.
 
 Copy `.env.example` to `.env` and fill in the environmental variables (for GraphQL token see [Craft 3 - Installation](#installation)).
 
+To enable GraphQL IDE support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`.
+
+To enable GraphQL  support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`.
+
 ```bash
 # install dependencies
 $ npm install
@@ -23,8 +27,14 @@ $ npm start
 # generate static project (may not work)
 $ npm run generate
 
-# generate IDE Tailwind file
-$ npm run tailwind
+# generate Tailwind IDE CSS file
+$ npm run tailwind-schema
+
+# generate GraphQLs schema
+$ npm run graphql-schema
+
+# generate both GraphQLs schema and Tailwind IDE CSS file
+$ npm run schemas
 ```
 
 ### Modules

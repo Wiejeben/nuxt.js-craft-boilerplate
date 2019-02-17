@@ -1,0 +1,16 @@
+{
+    "schema": {
+        "file": "schema.graphqls"
+    },
+    "endpoints" : [
+        {
+            "name": "Default",
+            "url": "http://.../graphql",
+            "options" : {
+                "headers": {
+                    "Authorization" : "Bearer ..."
+                }
+            }
+        }
+    ]
+}
