@@ -4,6 +4,6 @@
 
 <style>
     body {
-        font-family: Arial, sans-serif;
+        @apply font-sans
     }
 </style>

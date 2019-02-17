@@ -19,6 +19,9 @@ $ npm start
 
 # generate static project (may not work)
 $ npm run generate
+
+# generate IDE Tailwind file
+$ npm run tailwind
 ```
 
 ### Modules

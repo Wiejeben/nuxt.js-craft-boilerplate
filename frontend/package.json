@@ -9,7 +9,8 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "test": "jest"
+        "test": "jest",
+        "tailwind": "tailwind build assets/css/tailwind.css -o assets/css/generated-tailwind.css"
     },
     "dependencies": {
         "@nuxtjs/apollo": "^4.0.0-rc4",

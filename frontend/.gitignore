@@ -82,3 +82,6 @@ dist
 
 # Service worker
 sw.*
+
+# Ignore the generated Tailwind file
+assets/css/generated-tailwind.css
