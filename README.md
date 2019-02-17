@@ -6,6 +6,9 @@
 Can be found in the `frontend` directory.
 
 ### Build Setup
+
+Copy `.env.example` to `.env` and fill in the environmental variables (for GraphQL token see [Craft 3 - Installation](#installation)).
+
 ```bash
 # install dependencies
 $ npm install
@@ -37,10 +40,18 @@ Can be found in the `backend` directory.
 
 ### Installation
 Requires your own PHP server.
+
+Copy `.env.example` to `.env` and fill in the environmental variables.
+
 ```bash
 # install dependencies
 $ composer install
+
+# prints a .graphql type file to std out (append `| pbcopy` to copy the result to your clipboard)
+$ ./craft craftql/tools/print-schema
 ```
+
+To get your GraphQL token, go to `Settings -> CraftQL -> Generate new token -> Settings...`  and  make sure that entries and the relevant entry types (News and News Index for the default boilerplate) are enabled.
 
 ### Plugins
 Comes pre-installed with [CraftQL](https://github.com/markhuot/craftql), [SEOmatic](https://github.com/nystudio107/craft-seomatic), [Redactor](https://github.com/craftcms/redactor) and [Redirect](https://github.com/Dolphiq/craft3-plugin-redirect).

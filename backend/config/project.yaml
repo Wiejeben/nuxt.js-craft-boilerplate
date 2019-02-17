@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: f8e98e90-abe9-420c-91ef-e24d645ef464
-dateModified: 1550422729
+dateModified: 1550433714
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -185,9 +185,9 @@ sites:
     hasUrls: true
     language: en-US
     name: Boilerplate
-    primary: true
+    primary: '1'
     siteGroup: 8c7f591a-8b93-4e6e-9028-647b8f681e09
-    sortOrder: 1
+    sortOrder: '1'
 system:
   edition: pro
   live: true
