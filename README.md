@@ -56,9 +56,6 @@ Copy `.env.example` to `.env` and fill in the environmental variables.
 ```bash
 # install dependencies
 $ composer install
-
-# prints a .graphql type file to std out (append `| pbcopy` to copy the result to your clipboard)
-$ ./craft craftql/tools/print-schema
 ```
 
 To get your GraphQL token, go to `Settings → CraftQL → Generate new token → Settings...`  and  make sure that entries, globals and the relevant entry types (News, News Index and Navigation for the default boilerplate) are enabled.
