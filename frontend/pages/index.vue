@@ -18,12 +18,12 @@
 
         async asyncData({app, route}) {
             return {
-                _metaInfo: await app.meta(route)
+                metaInfo: await app.meta(route)
             }
         },
 
         head() {
-            return this._metaInfo
+            return this.metaInfo
         }
     }
 </script>
