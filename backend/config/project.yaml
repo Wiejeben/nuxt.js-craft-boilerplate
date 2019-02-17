@@ -1,0 +1,202 @@
+categoryGroups:
+  ed81e0e2-d805-41f7-9484-b6427fdb98dd:
+    handle: topics
+    name: Topics
+    siteSettings:
+      95e89cc5-91be-44e4-833a-5d3017e3601f:
+        hasUrls: false
+        template: null
+        uriFormat: null
+    structure:
+      maxLevels: null
+      uid: f8e98e90-abe9-420c-91ef-e24d645ef464
+dateModified: 1550422729
+email:
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
+  fromName: $SITE_NAME
+  template: ''
+  transportSettings: null
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  637310c2-57c6-494d-aab6-8bee7b82c1df:
+    name: Common
+fields:
+  49df95d1-9335-456f-9975-732e1f464aec:
+    contentColumnType: string
+    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    handle: topics
+    instructions: ''
+    name: Topics
+    searchable: true
+    settings:
+      branchLimit: ''
+      limit: null
+      localizeRelations: false
+      selectionLabel: 'Add a topic'
+      source: 'group:ed81e0e2-d805-41f7-9484-b6427fdb98dd'
+      sources: '*'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Categories
+  5e3f228d-3db1-4546-ab5e-389f4f36ec12:
+    contentColumnType: text
+    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    handle: seo
+    instructions: ''
+    name: SEO
+    searchable: true
+    settings:
+      elementDisplayPreviewType: google
+      facebookTabEnabled: ''
+      generalEnabledFields:
+        - seoTitle
+        - seoDescription
+        - seoImage
+      generalTabEnabled: '1'
+      sitemapTabEnabled: ''
+      twitterTabEnabled: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: nystudio107\seomatic\fields\SeoSettings
+  aeaba914-7f69-4d49-85aa-0a9be07aa22d:
+    contentColumnType: text
+    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    handle: body
+    instructions: ''
+    name: Body
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: '1'
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+plugins:
+  craftql:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+    settings:
+      allowedHeaders:
+        - 'Authorization, Content-Type'
+      graphiqlFetchUrl: /
+      maxQueryComplexity: false
+      maxQueryDepth: false
+      uri: graphql
+      verbs:
+        - POST
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.4
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.6
+sections:
+  08b69f49-f9aa-47e7-9e5b-ea22fbfe7820:
+    enableVersioning: true
+    entryTypes:
+      926f2453-0f6c-4ce8-ad35-0f40037e78d7:
+        fieldLayouts:
+          43cd94af-c259-4cd2-a09a-59d33ff28ebb:
+            tabs:
+              -
+                fields:
+                  49df95d1-9335-456f-9975-732e1f464aec:
+                    required: false
+                    sortOrder: 2
+                  aeaba914-7f69-4d49-85aa-0a9be07aa22d:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 1
+              -
+                fields:
+                  5e3f228d-3db1-4546-ab5e-389f4f36ec12:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
+        handle: news
+        hasTitleField: true
+        name: News
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: news
+    name: 'News Articles'
+    propagateEntries: true
+    siteSettings:
+      95e89cc5-91be-44e4-833a-5d3017e3601f:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'news/{slug}'
+    type: channel
+  899ea362-fe9d-45d1-94c6-288e29f7a695:
+    enableVersioning: true
+    entryTypes:
+      c2b1444f-2462-4c5c-ab43-54ffb9118db0:
+        fieldLayouts:
+          d0cfc9ad-0dac-4c74-a82d-274f6c331973:
+            tabs:
+              -
+                fields:
+                  5e3f228d-3db1-4546-ab5e-389f4f36ec12:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 1
+        handle: newsIndex
+        hasTitleField: true
+        name: 'News Index'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Title
+    handle: newsIndex
+    name: 'News Index'
+    propagateEntries: true
+    siteSettings:
+      95e89cc5-91be-44e4-833a-5d3017e3601f:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: news
+    type: single
+siteGroups:
+  8c7f591a-8b93-4e6e-9028-647b8f681e09:
+    name: Boilerplate
+sites:
+  95e89cc5-91be-44e4-833a-5d3017e3601f:
+    baseUrl: $APP_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: Boilerplate
+    primary: true
+    siteGroup: 8c7f591a-8b93-4e6e-9028-647b8f681e09
+    sortOrder: 1
+system:
+  edition: pro
+  live: true
+  name: $SITE_NAME
+  schemaVersion: 3.1.25
+  timeZone: Europe/Amsterdam
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
