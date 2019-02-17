@@ -1,7 +1,8 @@
-const pkg = require('./package');
 import axios from 'axios';
 
-require('dotenv').config()
+const pkg = require('./package');
+require('dotenv').config();
+
 
 module.exports = {
     mode: 'universal',
@@ -26,11 +27,9 @@ module.exports = {
     loading: {color: '#000'},
 
     /**
-     * TODO: Global CSS
+     * Global CSS
      */
-    css: [
-        // '~/assets/css/tailwind.css'
-    ],
+    css: ['~/assets/css/tailwind.css'],
 
     /**
      * Plugins to load before mounting the App
@@ -48,7 +47,7 @@ module.exports = {
         '@nuxtjs/axios',
         '@nuxtjs/dotenv',
         '@nuxtjs/proxy',
-        '@nuxtjs/redirect-module'
+        '@nuxtjs/redirect-module',
     ],
 
     /**
@@ -88,6 +87,7 @@ module.exports = {
 
     /**
      * Nuxt.js generate configuration
+     * TODO:
      */
     generate: {
         routes: async () => {
@@ -101,9 +101,11 @@ module.exports = {
     },
 
     /**
-     * TODO: Build configuration
+     * Build configuration
      */
     build: {
+        extractCSS: true,
+
         /*
         ** You can extend webpack config here
         */
