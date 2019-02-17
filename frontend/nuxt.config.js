@@ -75,7 +75,10 @@ module.exports = {
     redirect: async () => {
         consola.info('Fetching redirects');
         const {data} = await axios.get(process.env.BACKEND_URL + '/actions/module/redirect');
-        return data;
+        return [
+            ...data,
+            {from: '/admin', to: process.env.BACKEND_URL + '/admin'},
+        ];
     },
 
     /**

@@ -1,6 +1,6 @@
 # Nuxt.js Craft Boilerplate
 
-> Basic front-end and back-end boilerplate for Nuxt.js together with Craft 3.
+> Basic front-end and back-end boilerplate for Nuxt.js together with Craft 3 and Tailwind CSS.
 
 ## Nuxt.js
 Can be found in the `frontend` directory.
@@ -11,7 +11,7 @@ Copy `.env.example` to `.env` and fill in the environmental variables (for Graph
 
 To enable GraphQL IDE support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`.
 
-To enable GraphQL  support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`.
+Sometimes CSS changes may not be visible, this is a weakness of PurgeCSS. To make sure you specific CSS is not purged, add a keyword used in the not visible CSS the whitelist in `postcss.config.js`.
 
 ```bash
 # install dependencies
