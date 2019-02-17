@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const pkg = require('./package');
 require('dotenv').config();
+const consola = require('consola');
 
 
 module.exports = {
@@ -72,6 +73,7 @@ module.exports = {
      * Redirect module configuration
      */
     redirect: async () => {
+        consola.info('Fetching redirects');
         const {data} = await axios.get(process.env.BACKEND_URL + '/actions/module/redirect');
         return data;
     },
@@ -81,7 +83,7 @@ module.exports = {
      */
     apollo: {
         errorHandler(error) {
-            console.error('Apollo -', error.message)
+            consola.error(error);
         },
         clientConfigs: {
             default: '~/plugins/apollo-config.js',
@@ -90,7 +92,6 @@ module.exports = {
 
     /**
      * Nuxt.js generate configuration
-     * TODO:
      */
     generate: {
         routes: async () => {
