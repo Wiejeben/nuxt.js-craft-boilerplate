@@ -61,7 +61,7 @@ $ composer install
 $ ./craft craftql/tools/print-schema
 ```
 
-To get your GraphQL token, go to `Settings -> CraftQL -> Generate new token -> Settings...`  and  make sure that entries and the relevant entry types (News and News Index for the default boilerplate) are enabled.
+To get your GraphQL token, go to `Settings → CraftQL → Generate new token → Settings...`  and  make sure that entries, globals and the relevant entry types (News, News Index and Navigation for the default boilerplate) are enabled.
 
 ### Plugins
 Comes pre-installed with [CraftQL](https://github.com/markhuot/craftql), [SEOmatic](https://github.com/nystudio107/craft-seomatic), [Redactor](https://github.com/craftcms/redactor) and [Redirect](https://github.com/Dolphiq/craft3-plugin-redirect).
