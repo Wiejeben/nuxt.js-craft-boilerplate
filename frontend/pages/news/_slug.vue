@@ -6,6 +6,7 @@
 </template>
 
 <script>
+    import meta from "~/plugins/page-meta.mixin.js";
     import gql from "graphql-tag";
 
     export const query = gql`query getArticle($slug: String!) {
@@ -22,6 +23,8 @@
     }`;
 
     export default {
+        mixins: [meta],
+
         apollo: {
             article: {
                 query,
@@ -30,15 +33,5 @@
                 }
             }
         },
-
-        async asyncData({app, route}) {
-            return {
-                metaInfo: await app.meta(route)
-            }
-        },
-
-        head() {
-            return this.metaInfo
-        }
     }
 </script>

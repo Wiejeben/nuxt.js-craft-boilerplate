@@ -7,7 +7,8 @@
 </template>
 
 <script>
-    import Articles from '~/components/Articles.vue';
+    import Articles from "~/components/Articles.vue";
+    import meta from "~/plugins/page-meta.mixin.js";
     import gql from 'graphql-tag';
 
     export const query = gql`{
@@ -19,22 +20,14 @@
     }`;
 
     export default {
+        mixins: [meta],
+
         components: {
             'v-articles': Articles
         },
 
         apollo: {
             entry: query
-        },
-
-        async asyncData({app, route}) {
-            return {
-                metaInfo: await app.meta(route)
-            }
-        },
-
-        head() {
-            return this.metaInfo
         }
     }
 </script>

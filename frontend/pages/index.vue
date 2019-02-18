@@ -7,21 +7,15 @@
 </template>
 
 <script>
+    import meta from "~/plugins/page-meta.mixin.js";
     import Logo from '~/components/Logo.vue';
 
+
     export default {
+        mixins: [meta],
+
         components: {
             'v-logo': Logo
-        },
-
-        async asyncData({app, route}) {
-            return {
-                metaInfo: await app.meta(route)
-            }
-        },
-
-        head() {
-            return this.metaInfo
         }
     }
 </script>
