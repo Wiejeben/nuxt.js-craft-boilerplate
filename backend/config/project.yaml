@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: f8e98e90-abe9-420c-91ef-e24d645ef464
-dateModified: 1550440552
+dateModified: 1552427508
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -202,7 +202,7 @@ plugins:
   redactor:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 2.2.2
   redirect:
     edition: standard
     enabled: true
