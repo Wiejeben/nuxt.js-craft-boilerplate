@@ -22,19 +22,21 @@
         "@nuxtjs/redirect-module": "^0.2.0",
         "@vue/cli-shared-utils": "^3.5.1",
         "axios-extensions": "^3.0.5",
-        "consola": "^2.5.6",
-        "core-js": "^2.6.5",
+        "consola": "^2.5.8",
         "cross-env": "^5.2.0",
         "graphql-tag": "^2.10.1",
         "lodash": "^4.17.11",
-        "nuxt": "^2.4.5"
+        "node-fetch": "^2.3.0",
+        "nuxt": "^2.6.1"
     },
     "devDependencies": {
+        "@babel/runtime-corejs2": "^7.4.3",
         "@fullhuman/postcss-purgecss": "^1.1.0",
         "@vue/test-utils": "^1.0.0-beta.27",
-        "autoprefixer": "^9.4.10",
-        "babel-jest": "^24.5.0",
-        "jest": "^24.5.0",
+        "autoprefixer": "^9.5.0",
+        "babel-jest": "^24.7.1",
+        "core-js": "^2.6.5",
+        "jest": "^24.7.1",
         "nodemon": "^1.18.9",
         "tailwindcss": "^0.7.0",
         "vue-jest": "^3.0.4"
