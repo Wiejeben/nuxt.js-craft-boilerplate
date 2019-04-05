@@ -4,7 +4,6 @@ const pkg = require('./package');
 require('dotenv').config();
 const consola = require('consola');
 
-
 module.exports = {
     mode: 'universal',
 
@@ -62,7 +61,7 @@ module.exports = {
      * Proxy module configuration
      */
     proxy: {
-        '/graphql': process.env.BACKEND_URL,
+        [process.env.GRAPHQL_PATH]: process.env.BACKEND_URL,
         '/actions': process.env.BACKEND_URL,
         '/robots.txt': process.env.BACKEND_URL,
         '/humans.txt': process.env.BACKEND_URL,
@@ -73,6 +72,11 @@ module.exports = {
      * Redirect module configuration
      */
     redirect: async () => {
+        // Don't attempt to fetch redirects when this plug-in doesn't do anything anyways.
+        if (process.argv.indexOf('build') > -1 || process.argv.indexOf('generate') > -1) {
+            return [];
+        }
+
         consola.info('Fetching redirects');
         const {data} = await axios.get(process.env.BACKEND_URL + '/actions/module/redirect');
         return [
