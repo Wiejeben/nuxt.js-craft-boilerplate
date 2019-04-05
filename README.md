@@ -9,7 +9,7 @@ Can be found in the `frontend` directory.
 
 Copy `.env.example` to `.env` and fill in the environmental variables (for GraphQL token see [Craft 3 - Installation](#installation)).
 
-To enable GraphQL IDE support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`.
+To enable GraphQL IDE support copy `graphql.config.example.json` to `graphql.config.json` and execute `npm run graphql-schema`. This will also generate `fragmentTypes.json` which will add support for Craft Matrix fields to Apollo.
 
 Sometimes CSS changes may not be visible, this is a weakness of PurgeCSS. To make sure you specific CSS is not purged, add a keyword used in the not visible CSS the whitelist in `postcss.config.js`.
 
@@ -24,7 +24,7 @@ $ npm run dev
 $ npm run build
 $ npm start
 
-# generate static project (may not work)
+# generate static project (may require extra attention)
 $ npm run generate
 
 # generate Tailwind IDE CSS file
