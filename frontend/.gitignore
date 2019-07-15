@@ -86,9 +86,5 @@ sw.*
 # Generated Tailwind file
 assets/css/tailwind-schema.css
 
-# Generated GraphQL schema
-schema.graphqls
-fragmentTypes.json
-
 # GraphQL IDE config
 graphql.config.json
