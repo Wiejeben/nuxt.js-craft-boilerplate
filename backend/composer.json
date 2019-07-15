@@ -1,10 +1,10 @@
 {
   "require": {
-    "craftcms/cms": "3.1.21.1",
-    "craftcms/redactor": "2.3.2",
-    "dolphiq/redirect": "1.0.20",
-    "markhuot/craftql": "1.3.1",
-    "nystudio107/craft-seomatic": "3.1.47",
+    "craftcms/cms": "3.2.2",
+    "craftcms/redactor": "2.3.3.2",
+    "dolphiq/redirect": "1.0.23",
+    "markhuot/craftql": "1.3.2",
+    "nystudio107/craft-seomatic": "3.2.14",
     "vlucas/phpdotenv": "^2.4.0"
   },
   "autoload": {

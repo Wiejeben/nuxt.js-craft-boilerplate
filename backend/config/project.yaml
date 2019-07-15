@@ -1,16 +1,16 @@
 categoryGroups:
   ed81e0e2-d805-41f7-9484-b6427fdb98dd:
-    handle: topics
     name: Topics
+    handle: topics
+    structure:
+      uid: f8e98e90-abe9-420c-91ef-e24d645ef464
+      maxLevels: null
     siteSettings:
       95e89cc5-91be-44e4-833a-5d3017e3601f:
         hasUrls: false
-        template: null
         uriFormat: null
-    structure:
-      maxLevels: null
-      uid: f8e98e90-abe9-420c-91ef-e24d645ef464
-dateModified: 1554488652
+        template: null
+dateModified: 1563216393
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -26,46 +26,47 @@ fieldGroups:
     name: Misc
 fields:
   14caf314-7482-49ee-a507-ed522a769a10:
-    contentColumnType: text
-    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    name: Place
     handle: place
     instructions: ''
-    name: Place
     searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
     translationMethod: none
+    translationKeyFormat: null
     type: craft\fields\PlainText
-  19334b67-3de4-4763-9eff-3f56e0fd2a3f:
-    contentColumnType: text
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
     fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    contentColumnType: text
+  19334b67-3de4-4763-9eff-3f56e0fd2a3f:
+    name: Phone
     handle: phone
     instructions: ''
-    name: Phone
     searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
     translationMethod: none
+    translationKeyFormat: null
     type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    contentColumnType: text
   49df95d1-9335-456f-9975-732e1f464aec:
-    contentColumnType: string
-    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    name: Topics
     handle: topics
     instructions: ''
-    name: Topics
     searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Categories
     settings:
       branchLimit: ''
       limit: null
@@ -75,16 +76,16 @@ fields:
       sources: '*'
       targetSiteId: null
       viewMode: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Categories
-  5e3f228d-3db1-4546-ab5e-389f4f36ec12:
-    contentColumnType: text
     fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    contentColumnType: string
+  5e3f228d-3db1-4546-ab5e-389f4f36ec12:
+    name: SEO
     handle: seo
     instructions: ''
-    name: SEO
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: nystudio107\seomatic\fields\SeoSettings
     settings:
       elementDisplayPreviewType: google
       facebookTabEnabled: ''
@@ -95,63 +96,65 @@ fields:
       generalTabEnabled: '1'
       sitemapTabEnabled: ''
       twitterTabEnabled: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: nystudio107\seomatic\fields\SeoSettings
-  728e68fc-7333-4d76-9aa9-f8b1ec45263b:
+    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
     contentColumnType: text
-    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+  728e68fc-7333-4d76-9aa9-f8b1ec45263b:
+    name: Address
     handle: address
     instructions: ''
-    name: Address
     searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
     translationMethod: none
+    translationKeyFormat: null
     type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    contentColumnType: text
   8a58b2d5-25c9-4778-8539-75d647defee3:
-    contentColumnType: string
-    fieldGroup: fd61749a-9c2a-452c-828c-27030549f21d
+    name: URL
     handle: href
     instructions: ''
-    name: URL
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Url
     settings:
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
+    fieldGroup: fd61749a-9c2a-452c-828c-27030549f21d
+    contentColumnType: string(255)
   aeaba914-7f69-4d49-85aa-0a9be07aa22d:
-    contentColumnType: text
-    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
+    name: Body
     handle: body
     instructions: ''
-    name: Body
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
       columnType: text
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\redactor\Field
-  c19db8b1-6e8c-4d55-b29d-fa429a504ca4:
+      removeInlineStyles: '1'
+      removeEmptyTags: '1'
+      removeNbsp: '1'
+    fieldGroup: 637310c2-57c6-494d-aab6-8bee7b82c1df
     contentColumnType: text
-    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+  c19db8b1-6e8c-4d55-b29d-fa429a504ca4:
+    name: 'Postal Code'
     handle: postalCode
     instructions: ''
-    name: 'Postal Code'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
     settings:
       charLimit: ''
       code: ''
@@ -159,15 +162,18 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
+    fieldGroup: 37dec144-66f8-4a73-95c4-c9ef177c9364
+    contentColumnType: text
 globalSets:
   3f9750a9-ae1b-42da-a85b-28b0a2480b68:
+    name: Location
+    handle: location
     fieldLayouts:
       1172f276-a7dc-41cf-9641-6bbdc7f61474:
         tabs:
           -
+            name: Location
+            sortOrder: 1
             fields:
               14caf314-7482-49ee-a507-ed522a769a10:
                 required: false
@@ -181,10 +187,6 @@ globalSets:
               c19db8b1-6e8c-4d55-b29d-fa429a504ca4:
                 required: false
                 sortOrder: 3
-            name: Location
-            sortOrder: 1
-    handle: location
-    name: Location
 plugins:
   craftql:
     edition: standard
@@ -202,24 +204,36 @@ plugins:
   redactor:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.2
+    schemaVersion: 2.3.0
   redirect:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.4
+    schemaVersion: 1.0.5
   seomatic:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.7
+    schemaVersion: 3.0.8
 sections:
   08b69f49-f9aa-47e7-9e5b-ea22fbfe7820:
+    name: 'News Articles'
+    handle: news
+    type: channel
     enableVersioning: true
+    propagationMethod: all
     entryTypes:
       926f2453-0f6c-4ce8-ad35-0f40037e78d7:
+        name: News
+        handle: news
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
         fieldLayouts:
           43cd94af-c259-4cd2-a09a-59d33ff28ebb:
             tabs:
               -
+                name: General
+                sortOrder: 1
                 fields:
                   49df95d1-9335-456f-9975-732e1f464aec:
                     required: false
@@ -227,116 +241,98 @@ sections:
                   aeaba914-7f69-4d49-85aa-0a9be07aa22d:
                     required: false
                     sortOrder: 1
-                name: General
-                sortOrder: 1
               -
+                name: SEO
+                sortOrder: 2
                 fields:
                   5e3f228d-3db1-4546-ab5e-389f4f36ec12:
                     required: false
                     sortOrder: 1
-                name: SEO
-                sortOrder: 2
-        handle: news
-        hasTitleField: true
-        name: News
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Title
-    handle: news
-    name: 'News Articles'
-    propagateEntries: true
     siteSettings:
       95e89cc5-91be-44e4-833a-5d3017e3601f:
         enabledByDefault: true
         hasUrls: true
-        template: ''
         uriFormat: 'news/{slug}'
-    type: channel
+        template: ''
   6daed0b6-7adb-4445-a58e-c09b7406418e:
+    name: Navigation
+    handle: navigation
+    type: structure
     enableVersioning: true
+    propagationMethod: all
+    structure:
+      uid: 0c8044e2-aeb7-41a2-8b8c-fc4a389fc86f
+      maxLevels: 1
     entryTypes:
       ec81f43c-bc31-4410-bf00-9cc36e97cdc2:
+        name: Navigation
+        handle: navigation
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
         fieldLayouts:
           7d166b50-4f8b-47ac-8529-5271d44c1f47:
             tabs:
               -
+                name: General
+                sortOrder: 1
                 fields:
                   8a58b2d5-25c9-4778-8539-75d647defee3:
                     required: false
                     sortOrder: 1
-                name: General
-                sortOrder: 1
-        handle: navigation
-        hasTitleField: true
-        name: Navigation
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Title
-    handle: navigation
-    name: Navigation
-    propagateEntries: true
     siteSettings:
       95e89cc5-91be-44e4-833a-5d3017e3601f:
         enabledByDefault: true
         hasUrls: false
-        template: null
         uriFormat: null
-    structure:
-      maxLevels: '1'
-      uid: 0c8044e2-aeb7-41a2-8b8c-fc4a389fc86f
-    type: structure
+        template: null
   899ea362-fe9d-45d1-94c6-288e29f7a695:
+    name: 'News Index'
+    handle: newsIndex
+    type: single
     enableVersioning: true
+    propagationMethod: all
     entryTypes:
       c2b1444f-2462-4c5c-ab43-54ffb9118db0:
+        name: 'News Index'
+        handle: newsIndex
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
         fieldLayouts:
           d0cfc9ad-0dac-4c74-a82d-274f6c331973:
             tabs:
               -
+                name: General
+                sortOrder: 1
                 fields:
                   5e3f228d-3db1-4546-ab5e-389f4f36ec12:
                     required: false
                     sortOrder: 1
-                name: General
-                sortOrder: 1
-        handle: newsIndex
-        hasTitleField: true
-        name: 'News Index'
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: Title
-    handle: newsIndex
-    name: 'News Index'
-    propagateEntries: true
     siteSettings:
       95e89cc5-91be-44e4-833a-5d3017e3601f:
         enabledByDefault: true
         hasUrls: true
-        template: ''
         uriFormat: news
-    type: single
+        template: ''
 siteGroups:
   8c7f591a-8b93-4e6e-9028-647b8f681e09:
     name: Boilerplate
 sites:
   95e89cc5-91be-44e4-833a-5d3017e3601f:
-    baseUrl: $APP_URL
-    handle: default
-    hasUrls: true
-    language: en-US
     name: Boilerplate
-    primary: '1'
+    handle: default
+    language: en-US
+    hasUrls: true
+    baseUrl: $APP_URL
+    sortOrder: 1
+    primary: true
     siteGroup: 8c7f591a-8b93-4e6e-9028-647b8f681e09
-    sortOrder: '1'
 system:
   edition: pro
   live: true
   name: $SITE_NAME
-  schemaVersion: 3.1.26
+  schemaVersion: 3.2.15
   timeZone: Europe/Amsterdam
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: ''
-  photoVolumeUid: null
-  requireEmailVerification: true
