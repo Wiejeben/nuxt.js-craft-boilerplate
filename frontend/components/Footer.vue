@@ -4,7 +4,7 @@
             Address: {{ location.address }}<br>
             Place: {{ location.place }}<br>
             Postal Code: {{ location.postalCode }}<br>
-            Phone Number: {{ location.phoneNumber }}
+            Phone Number: {{ location.phone }}
         </p>
     </footer>
 </template>
@@ -15,7 +15,7 @@
     export default {
         computed: {
             ...mapState({
-                location: state => state.globals.location,
+                location: state => state.globals[0],
             })
         }
     }

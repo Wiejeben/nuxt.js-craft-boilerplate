@@ -21,16 +21,16 @@ export default {
 
             const {data} = await client.query({
                 query: gql`{
-                    globals {
-                        location {
+                    globals: globalSets {
+                        ... on location_GlobalSet {
                             address
                             place
                             postalCode
                             phone
                         }
                     }
-                    navigation: entries(section: [navigation]) {
-                        ... on Navigation {
+                    navigation: entries(section: "navigation") {
+                        ... on navigation_navigation_Entry {
                             id
                             title
                             href

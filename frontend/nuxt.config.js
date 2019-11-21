@@ -106,7 +106,7 @@ module.exports = {
             const {data} = await axios.post(
                 process.env.BACKEND_URL + process.env.GRAPHQL_PATH,
                 {query: '{entries(section: []) {uri}}'},
-                {headers: {'Authorization': 'Bearer ' + process.env.GRAPHQL_TOKEN}},
+                {headers: {'Authorization': (process.env.GRAPHQL_TOKEN) ? 'Bearer ' + process.env.GRAPHQL_TOKEN : null}},
             );
             return data.data.entries.map(entry => '/' + entry.uri);
         }

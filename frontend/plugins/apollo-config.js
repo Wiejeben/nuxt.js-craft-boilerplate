@@ -10,7 +10,7 @@ export default function ({env}) {
 
     return {
         httpEndpoint: env.FRONTEND_URL + env.GRAPHQL_PATH,
-        getAuth: () => 'Bearer ' + env.GRAPHQL_TOKEN,
+        getAuth: () => (env.GRAPHQL_TOKEN) ? 'Bearer ' + env.GRAPHQL_TOKEN : null,
         cache: new InMemoryCache({fragmentMatcher})
     };
 }

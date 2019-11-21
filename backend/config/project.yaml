@@ -10,7 +10,7 @@ categoryGroups:
         hasUrls: false
         uriFormat: null
         template: null
-dateModified: 1563216393
+dateModified: 1574343050
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -188,19 +188,6 @@ globalSets:
                 required: false
                 sortOrder: 3
 plugins:
-  craftql:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.1.0
-    settings:
-      allowedHeaders:
-        - 'Authorization, Content-Type'
-      graphiqlFetchUrl: /
-      maxQueryComplexity: false
-      maxQueryDepth: false
-      uri: graphql
-      verbs:
-        - POST
   redactor:
     edition: standard
     enabled: true
@@ -334,5 +321,5 @@ system:
   edition: pro
   live: true
   name: $SITE_NAME
-  schemaVersion: 3.2.15
+  schemaVersion: 3.3.3
   timeZone: Europe/Amsterdam

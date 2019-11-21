@@ -12,10 +12,8 @@
     import gql from 'graphql-tag';
 
     export const query = gql`{
-        entry(section: [newsIndex]) {
-            ... on NewsIndex {
-                title
-            }
+        entry: entries(section: "newsIndex") {
+            title
         }
     }`;
 
@@ -27,7 +25,12 @@
         },
 
         apollo: {
-            entry: query
+            entry: {
+                query,
+                result({data}) {
+                    return data[0]
+                }
+            }
         }
     }
 </script>
