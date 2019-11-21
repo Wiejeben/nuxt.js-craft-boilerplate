@@ -10,7 +10,7 @@ categoryGroups:
         hasUrls: false
         uriFormat: null
         template: null
-dateModified: 1563216393
+dateModified: 1574345686
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -193,14 +193,15 @@ plugins:
     enabled: true
     schemaVersion: 1.1.0
     settings:
-      allowedHeaders:
-        - 'Authorization, Content-Type'
       graphiqlFetchUrl: /
-      maxQueryComplexity: false
-      maxQueryDepth: false
       uri: graphql
       verbs:
         - POST
+      allowedHeaders:
+        - 'Authorization, Content-Type'
+      maxQueryDepth: false
+      maxQueryComplexity: false
+      throwSchemaBuildErrors: false
   redactor:
     edition: standard
     enabled: true
@@ -322,6 +323,7 @@ siteGroups:
     name: Boilerplate
 sites:
   95e89cc5-91be-44e4-833a-5d3017e3601f:
+    siteGroup: 8c7f591a-8b93-4e6e-9028-647b8f681e09
     name: Boilerplate
     handle: default
     language: en-US
@@ -329,7 +331,6 @@ sites:
     baseUrl: $APP_URL
     sortOrder: 1
     primary: true
-    siteGroup: 8c7f591a-8b93-4e6e-9028-647b8f681e09
 system:
   edition: pro
   live: true
