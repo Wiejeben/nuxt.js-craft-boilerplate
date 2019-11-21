@@ -2,7 +2,7 @@
     <section class="container">
         <v-logo/>
 
-        <h1>Welcome!</h1>
+        <h1 class="text-3xl font-bold">Welcome!</h1>
     </section>
 </template>
 

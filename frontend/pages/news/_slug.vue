@@ -1,7 +1,7 @@
 <template>
     <div v-if="article">
-        <h1>{{ article.title }}</h1>
-        <nuxt-link to="/news">Go to the news page</nuxt-link>
+        <h1 class="text-3xl font-bold">{{ article.title }}</h1>
+        <nuxt-link to="/news" class="underline hover:no-underline">Go to the news page</nuxt-link>
     </div>
 </template>
 

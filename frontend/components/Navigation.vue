@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li v-for="link in navigation" :key="link.id"><nuxt-link :to="link.href">{{ link.title }}</nuxt-link></li>
+        <li v-for="link in navigation" :key="link.id"><nuxt-link :to="link.href" class="underline hover:no-underline">{{ link.title }}</nuxt-link></li>
     </ul>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <section class="container" v-if="entry">
-        <h1>{{ entry.title }}</h1>
+        <h1 class="text-3xl font-bold">{{ entry.title }}</h1>
 
         <v-articles/>
     </section>

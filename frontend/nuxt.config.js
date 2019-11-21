@@ -50,6 +50,10 @@ module.exports = {
         '@nuxtjs/redirect-module',
     ],
 
+    buildModules: [
+        '@nuxtjs/tailwindcss'
+    ],
+
     /**
      * Axios module configuration
      */
@@ -120,5 +124,14 @@ module.exports = {
         extend(config, ctx) {
 
         }
-    }
+    },
+
+    /**
+     * PurgeCSS whitelist.
+     */
+    purgeCSS: {
+        whitelist: [
+            // 'css-selector-to-whitelist'
+        ],
+    },
 };

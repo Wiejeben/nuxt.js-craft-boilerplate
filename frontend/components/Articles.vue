@@ -5,12 +5,12 @@
         </div>
         <div v-else>
             <article v-for="article in articles">
-                <h2>{{ article.title }}</h2>
+                <h2 class="text-2xl font-bold">{{ article.title }}</h2>
 
                 <div class="mt-5">
                     <div v-html="article.body.content"></div>
 
-                    <nuxt-link :to="article.uri">Read More!</nuxt-link>
+                    <nuxt-link :to="article.uri" class="underline hover:no-underline">Read More!</nuxt-link>
                 </div>
             </article>
 
